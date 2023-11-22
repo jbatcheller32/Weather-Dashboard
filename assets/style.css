@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    background-color: #0f2a3f;
+    height: 75px;
+    color: #fff;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#citySearch {
+    margin-left: 30px;
+    border-width: 20%;
+
+}
+
+h2 {
+    margin-top: 15px;
+}
+
+#userSearch {
+    width: 20%;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+
+#searchBtn {
+    width: 20%;
+    margin-top: 20px;
+    background-color: #5982a1;
+    color: #fff;
+    border-radius: 5px;
+
+
+}
+
+#search-results { 
+    width: 18%;
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: #5982a1;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}

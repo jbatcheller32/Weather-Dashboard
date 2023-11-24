@@ -43,12 +43,20 @@ h2 {
 
 }
 
-#search-results { 
-    width: 18%;
+#search-results {
+
+    width: 75%;
+    
+
+}
+
+li { 
+    
+    width: 20%;
     margin-top: 20px;
-    margin-left: 30px;
     background-color: #5982a1;
     color: #fff;
     border-radius: 5px;
     text-align: center;
 }
+

@@ -8,6 +8,9 @@ body {
 
 }
 
+
+
+
 h1 {
     background-color: #0f2a3f;
     height: 75px;
@@ -17,8 +20,10 @@ h1 {
 }
 
 #citySearch {
+
     margin-left: 30px;
     border-width: 20%;
+
 
 }
 
@@ -48,15 +53,25 @@ h2 {
     width: 75%;
     
 
+
 }
 
-li { 
-    
+/*li {
+
     width: 20%;
     margin-top: 20px;
-    background-color: #5982a1;
+    background-color: #76848f;
     color: #fff;
     border-radius: 5px;
     text-align: center;
+}*/
+
+#card {
+    position: absolute;
+    top: 125px;
+    right: 250px;
+    width: 50%;
+    height: 200px;
+    border: solid 2px;
 }
 

@@ -51,27 +51,40 @@ h2 {
 #search-results {
 
     width: 75%;
+
+}
+
+
+#card-container {
+
+    display: inline-flex;
+    justify-content: right; 
     
+    gap: 18px;
+    margin-right: 50px;
 
 
 }
 
-/*li {
-
-    width: 20%;
-    margin-top: 20px;
-    background-color: #76848f;
-    color: #fff;
-    border-radius: 5px;
-    text-align: center;
-}*/
-
-#card {
+#main-card {
     position: absolute;
     top: 125px;
-    right: 250px;
-    width: 50%;
+    right: 65px;
+    width: 65%;
     height: 200px;
     border: solid 2px;
 }
+
+#card-1, #card-2, #card-3, #card-4, #card-5 {
+    
+    margin-top: 100px;
+    margin-bottom: 25px;
+    width: 10rem;
+    height: 200px;
+    border: solid 2px;
+    background-color: #0f2a3f;
+    color: #fff;
+
+}
+
 

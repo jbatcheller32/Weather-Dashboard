@@ -82,11 +82,11 @@ function getApi() {
                 currentDayWeatherEl.appendChild(icon);
                 icon.setAttribute("style", "list-style-type: none; margin-left: 5px; ");
 
-                temp.textContent = 'Tempurature:' + " " + data.list[i].main.temp;
+                temp.textContent = 'Tempurature:' + " " + data.list[i].main.temp + " " + 'F';
                 currentDayWeatherEl.appendChild(temp);
                 temp.setAttribute("style", "list-style-type: none; margin-left: 5px; ");
 
-                wind.textContent = 'Wind:' + " " + data.list[i].wind.speed;
+                wind.textContent = 'Wind:' + " " + data.list[i].wind.speed + 'MPH';
                 currentDayWeatherEl.appendChild(wind);
                 wind.setAttribute("style", "list-style-type: none; margin-left: 5px; ");
 
@@ -107,11 +107,11 @@ function getApi() {
                     icon.setAttribute("style", "list-style-type: none; margin-left: 5px; ");
 
 
-                    temp.textContent = 'Tempurature:' + " " + data.list[i].main.temp;
+                    temp.textContent = 'Tempurature:' + " " + data.list[i].main.temp + " " + 'F';
                     dayTwoCardEl.appendChild(temp);
                     temp.setAttribute("style", "list-style-type: none; margin-left: 5px; ");
 
-                    wind.textContent = 'Wind:' + " " + data.list[i].wind.speed;
+                    wind.textContent = 'Wind:' + " " + data.list[i].wind.speed + 'MPH';
                     dayTwoCardEl.appendChild(wind);
                     wind.setAttribute("style", "list-style-type: none; margin-left: 5px; ");
 
@@ -126,11 +126,11 @@ function getApi() {
                         var wind = document.createElement('li');
                         var humidity = document.createElement('li');
 
-                        temp.textContent = 'Tempurature:' + " " + data.list[i].main.temp;
+                        temp.textContent = 'Tempurature:' + " " + data.list[i].main.temp + " " + 'F';
                         dayThreeCardEl.appendChild(temp);
                         temp.setAttribute("style", "list-style-type: none; margin-left: 5px; ");
 
-                        wind.textContent = 'Wind:' + " " + data.list[i].wind.speed;
+                        wind.textContent = 'Wind:' + " " + data.list[i].wind.speed + 'MPH';
                         dayThreeCardEl.appendChild(wind);
                         wind.setAttribute("style", "list-style-type: none; margin-left: 5px; ");
 
@@ -144,11 +144,11 @@ function getApi() {
                             var wind = document.createElement('li');
                             var humidity = document.createElement('li');
 
-                            temp.textContent = 'Tempurature:' + " " + data.list[i].main.temp;
+                            temp.textContent = 'Tempurature:' + " " + data.list[i].main.temp + " " + 'F';
                             dayFourCardEl.appendChild(temp);
                             temp.setAttribute("style", "list-style-type: none; margin-left: 5px; ");
 
-                            wind.textContent = 'Wind:' + " " + data.list[i].wind.speed;
+                            wind.textContent = 'Wind:' + " " + data.list[i].wind.speed + 'MPH';
                             dayFourCardEl.appendChild(wind);
                             wind.setAttribute("style", "list-style-type: none; margin-left: 5px; ");
 
@@ -162,11 +162,11 @@ function getApi() {
                                 var wind = document.createElement('li');
                                 var humidity = document.createElement('li');
 
-                                temp.textContent = 'Tempurature:' + " " + data.list[i].main.temp;
+                                temp.textContent = 'Tempurature:' + " " + data.list[i].main.temp + " " + 'F';
                                 dayFiveCardEl.appendChild(temp);
                                 temp.setAttribute("style", "list-style-type: none; margin-left: 5px; ");
 
-                                wind.textContent = 'Wind:' + " " + data.list[i].wind.speed;
+                                wind.textContent = 'Wind:' + " " + data.list[i].wind.speed + 'MPH';
                                 dayFiveCardEl.appendChild(wind);
                                 wind.setAttribute("style", "list-style-type: none; margin-left: 5px; ");
 
@@ -181,11 +181,11 @@ function getApi() {
                                     var wind = document.createElement('li');
                                     var humidity = document.createElement('li');
 
-                                    temp.textContent = 'Tempurature:' + " " + data.list[i].main.temp;
+                                    temp.textContent = 'Tempurature:' + " " + data.list[i].main.temp + " " + 'F';
                                     daySixCardEl.appendChild(temp);
                                     temp.setAttribute("style", "list-style-type: none; margin-left: 5px; ");
 
-                                    wind.textContent = 'Wind:' + " " + data.list[i].wind.speed;
+                                    wind.textContent = 'Wind:' + " " + data.list[i].wind.speed + 'MPH';
                                     daySixCardEl.appendChild(wind);
                                     wind.setAttribute("style", "list-style-type: none; margin-left: 5px; ");
 

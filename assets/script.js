@@ -73,9 +73,14 @@ function getApi() {
 
             for (var i = 0; i < data.list.length; i++) {
 
+                var icon = document.createElement('li');
                 var temp = document.createElement('li');
                 var wind = document.createElement('li');
                 var humidity = document.createElement('li');
+
+                icon.textContent = data.list[i].weather.icon;
+                currentDayWeatherEl.appendChild(icon);
+                icon.setAttribute("style", "list-style-type: none; margin-left: 5px; ");
 
                 temp.textContent = 'Tempurature:' + " " + data.list[i].main.temp;
                 currentDayWeatherEl.appendChild(temp);
@@ -92,9 +97,14 @@ function getApi() {
 
                 for (var i = 0; i < data.list.length; i++) {
 
+                    var icon = document.createElement('li');
                     var temp = document.createElement('li');
                     var wind = document.createElement('li');
                     var humidity = document.createElement('li');
+
+                    icon.textContent = data.list[i].weather.icon;
+                    dayTwoCardEl.appendChild(icon);
+                    icon.setAttribute("style", "list-style-type: none; margin-left: 5px; ");
 
 
                     temp.textContent = 'Tempurature:' + " " + data.list[i].main.temp;

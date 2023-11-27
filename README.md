@@ -16,4 +16,9 @@ https://jbatcheller32.github.io/Weather-Dashboard/
 
 
 
+<img width="932" alt="weather-1" src="https://github.com/jbatcheller32/Weather-Dashboard/assets/110508090/94bf1edc-2ab8-448c-a298-c718df705300">
+
+<img width="938" alt="weather-2" src="https://github.com/jbatcheller32/Weather-Dashboard/assets/110508090/5ccc1834-4596-4af0-bca9-1c39bfb7545d">
+
+
 

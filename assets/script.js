@@ -17,19 +17,23 @@ var daySixListEl = document.querySelector('#card-text-5');
 var recentSearches = [];
 
 
-function getApi() {
+function getWeather(cityName) {
+    const baseUrl = 'https://api.openweathermap.org/data/2.5/forecast?q=' + cityName + ' &appid=a7bb081342ad5ee187c71f2c065ec901&units=imperial;'
+    
+  
+  
+    fetch(baseUrl)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log(`Forecast for ${data.city.name}:`);
+        // Process and display forecast data as needed
+        console.log(data);
 
-    var requestUrl = 'https://api.openweathermap.org/data/2.5/forecast?&lat=39.7392&lon=-104.9847&appid=a7bb081342ad5ee187c71f2c065ec901&units=imperial';
-
-
-    fetch(requestUrl)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            console.log(data);
-
-            //the code belwo creates a title and the datr
 
             var cardTitle = document.createElement('h5');
             cardTitle.textContent = data.city.name + ' ' + dayjs().format('MM/DD/YYYY');
@@ -93,6 +97,7 @@ function getApi() {
                 humidity.textContent = 'Humidity:' + " " + data.list[i].main.humidity;
                 currentDayWeatherEl.appendChild(humidity);
                 humidity.setAttribute("style", "list-style-type: none; margin-left: 5px; ");
+              
 
 
                 for (var i = 0; i < data.list.length; i++) {
@@ -209,7 +214,10 @@ function getApi() {
 };
 
 
-citySearchBtnEl.addEventListener('click', getApi);
+citySearchBtnEl.addEventListener('click', function(){
+    var cityName = userInputEl.value; 
+    getWeather(cityName);
+});
 
 
 

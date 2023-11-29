@@ -18,21 +18,20 @@ var recentSearches = [];
 
 
 function getWeather(cityName) {
-    const baseUrl = 'https://api.openweathermap.org/data/2.5/forecast?q=' + cityName + ' &appid=a7bb081342ad5ee187c71f2c065ec901&units=imperial;'
+    var baseUrl = 'https://api.openweathermap.org/data/2.5/forecast?q=' + cityName + ' &appid=a7bb081342ad5ee187c71f2c065ec901&units=imperial;'
     
   
   
     fetch(baseUrl)
       .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok.');
-        }
         return response.json();
-      })
+        })
       .then(data => {
-        console.log(`Forecast for ${data.city.name}:`);
-        // Process and display forecast data as needed
         console.log(data);
+
+        
+        // Process and display forecast data as needed
+        
 
 
             var cardTitle = document.createElement('h5');
